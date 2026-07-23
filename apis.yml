@@ -1,8 +1,25 @@
 aid: autonomic
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/autonomic.png
 name: Autonomic
-description: 'Autonomic is a company surfaced as a portfolio company of craft-ventures and added to the
-  API Evangelist network as a stub for enrichment. Sector: infrastructure. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Autonomic is a connected-vehicle cloud company founded in 2016, acquired by Ford Motor
+  Company in 2018 and fully integrated into Ford in 2023. Its flagship product, the Transportation
+  Mobility Cloud (TMC), is one of the largest connected-vehicle cloud platforms in production, providing
+  an API-driven platform for developers to build applications that interact with vehicles while abstracting
+  the complexity of different vehicle models and connectivity devices. The public developer surface (the
+  TMC Developer Portal) is gated behind partner authentication, so most technical artifacts are not
+  publicly harvestable. This profile was surfaced as a portfolio company of Craft Ventures and added to
+  the API Evangelist network for enrichment.'
 url: https://raw.githubusercontent.com/api-evangelist/autonomic/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,16 +29,41 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Infrastructure
-apis: []
+- Automotive
+- Connected Vehicles
+- Mobility
+- Cloud
+- IoT
+apis:
+- name: Transportation Mobility Cloud
+  description: 'The Transportation Mobility Cloud (TMC) is Autonomic''s API-driven connected-vehicle
+    cloud platform, letting developers build applications that interact with vehicles across different
+    models and connectivity devices. The developer portal and API reference are gated behind partner
+    authentication.'
+  humanURL: https://developer.autonomic.ai
+  properties:
+  - type: DeveloperPortal
+    url: https://developer.autonomic.ai
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/autonomic-domain-security.yml
 - type: Website
   url: https://autonomic.ai
+- type: DeveloperPortal
+  url: https://developer.autonomic.ai
+- type: PrivacyPolicy
+  url: https://www.ford.com/help/privacy/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

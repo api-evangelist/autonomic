@@ -1,0 +1,21 @@
+generated: '2026-07-18'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: autonomic.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 13 23:59:59 2026 GMT
+  hsts: false
+- host: developer.autonomic.ai
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 26 23:59:59 2026 GMT
+  hsts: false
+domains:
+- domain: autonomic.ai
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
