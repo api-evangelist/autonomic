@@ -65,6 +65,11 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: ParentCompany
+  url: https://apis.io/providers/ford-motor/
+  name: Ford Motor Company
+  x-relationship: acquired
+  x-evidence: "Autonomic is a connected-vehicle cloud company founded in 2016, acquired by Ford Motor Company in 2018 and fully integrated into Ford in 2023."
 - type: DomainSecurity
   url: security/autonomic-domain-security.yml
 - type: Website
