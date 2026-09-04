@@ -21,6 +21,8 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
+  source:
+  - {url: 'https://autonomic.ai', status: 302, note: 'declared website redirects to https://www.ford.com/ — a different registrable domain (autonomic.ai -> ford.com), possible rename or acquisition (probed 2026-09-03, roadmap#169)'}
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/autonomic.png
 name: Autonomic
 description: 'Autonomic is a connected-vehicle cloud company founded in 2016, acquired by Ford Motor
